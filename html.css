@@ -1,0 +1,32 @@
+h1,h2,h3{
+	color:red;
+}
+.para1{
+	color:green;
+}
+#para2{
+	color:yellow;
+}
+*{
+	background-color:black;
+	color:white;
+}
+.div1{
+	display:flex;
+}
+.div2 img{
+	height:200px;
+	width:300px;
+}
+
+.div2{
+	display:flex;
+	justify-content:center;
+}
+.div3{
+	display:flex;
+	justify-content:space-evenly;
+}
+.div4{
+	display:flex;
+}
