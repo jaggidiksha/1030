@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            height:200px;
+            width: 200px;
+            /* transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+            transition-delay: 2s; */
+            transition: background-color 3s linear 1s,transform 2s;
+        }
+        div:hover{
+            /* width:400px; */
+            background-color: blue;
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+
+    <form>
+        <label>NAME</label>
+        <input type="text" placeholder="enter your name"><br>
+        <label>DATE</label>
+        <input type="date"><br>
+        <label>ADDRESS</label>
+        <textarea></textarea><br>
+        <label>SELECT COUNTRY</label>
+        <select>
+            <option>India</option>
+            <option>Japan</option>
+            <option>China</option>
+        </select><br>
+        <label>CHOOSE FILE</label>
+        <input type="file"><br>
+        <label>GENDER</label>
+        <input type="radio" name="g1">Male
+        <input type="radio" name="g1">Female
+        <br>
+        <label>MOBILE NO</label>
+        <input type="tel" maxlength="10"><br>
+        <label>QUANTITY</label>
+        <input type="number" max="1" min="10"><br>
+        <label>EMAIL</label>
+        <input type="email" value="example@gmail.com"><br>
+        <label>TIME</label>
+        <input type="time"><br>
+        <input type="submit">
+        <input type="reset">
+        <button>clickme!</button>
+
+    </form>
+    
+</body>
+</html>
