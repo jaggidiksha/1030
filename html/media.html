@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .abc{
+      display: flex;
+    }
+    .abc img{
+      width:800px;
+    }
+
+    @media(max-width:768px){
+      .abc {
+        display: block;
+      }
+
+      .abc p{
+        font-size: 40px;
+        color: red;
+      }
+    h1{
+        color: blue;
+      }
+    }
+
+    @media(min-width:1024px){
+      .abc p{
+        font-size: 30px;
+        color: black;
+        background-color: aquamarine;
+
+      }
+    }
+
+    @media(min-width:769px) and (max-width:1023px){
+      h1{
+        color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>welcome to html!</h1>
+  </center>
+  <div class="abc">
+    <img src="https://images.unsplash.com/photo-1736891267026-9d878832c112?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D" >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, iusto corrupti? Repudiandae veritatis deleniti, quibusdam quam ab distinctio! Tempore ea perferendis, voluptas rem deleniti excepturi aspernatur! Saepe harum perferendis incidunt!</p>
+  </div>
+
+  <input type="color">
+  
+</body>
+</html>
