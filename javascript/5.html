@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// for(let i=1;i<=10;i++){
+
+//     if(i==5){
+//         break;
+//     }
+//     document.write(i+"<br>")
+// }
+// continue: skips a particular condition
+// for(let i=1;i<=5;i++){
+// for(let j=1;j<=i;j++){
+//     document.write("*"+" ")
+// }
+//     document.write("<br>")
+// }
+
+
+// types of for loop
+
+// for in:it iterate over the iterable objects 
+// for(variable in objectname){
+//     // code block to be executed
+// }
+
+// let qw={
+//     name:"john",
+//     age:23,
+//     occupation:"developer"
+// }
+// to access the keys
+// for( let x in qw){
+//     console.log(x)
+// }
+
+// to access the values
+// for(let x in qw){
+//     console.log(qw[x])
+// }
+
+// for(let x in qw){
+//     console.log(x,qw[x])
+// }
+
+
+// let ary=[12,23,45,89,99]
+
+// for(let y in ary){
+//     console.log(ary[y])
+// }
+// // for of :it iterate over the values of iterable objects
+
+// for(variable of objectname){
+    // code block 
+// }
+
+// let arr=[34,5,6,8,9,9]
+// for(let x of arr){
+//     console.log(x)
+// }
+
+// let str="john depole"
+// for(let a of str){
+//     console.log(a)
+// }
+// forEach :it is used to perform opeartion on each element of an array
+
+// let a=[2,3,4,5,6]
+// forEach   
+
+// a.forEach(function(x){
+// console.log(x*2)
+// })
+
+// iterable objects:numbers,array,strings,objects
+// non-iterable objects:boolean,integer
+
+function abc (qw){
+
+    for(let x in qw){
+        console.log(x,qw[x])
+    }
+
+}
+
+let obj={
+    name:"john",
+    age:23,
+    occupation:"developer"
+}
+abc(obj)
+    </script>
+</body>
+</html>
