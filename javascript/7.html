@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">hello html </p>
+    <button onclick='document.getElementById("para").innerHTML="hello javascript"'>update text</button><br>
+<button onclick="off()">off</button>
+<img id="image" src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" alt="" width="200px" height="300px">
+<button>change</button>
+<button onclick="on()">on</button>
+    <script>
+
+        let images=["","","","",""]
+function off(){
+document.getElementById("image").src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"
+}
+function on(){
+    document.getElementById("image").src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg"
+}
+console.log(Math.floor(Math.random()*10))
+
+    </script>
+</body>
+</html>
