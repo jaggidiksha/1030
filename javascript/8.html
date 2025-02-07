@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Password<input type="text" id="first">
+    <br>
+    Confirm Password<input type="text" id="second">
+    <button onclick="same()">submit</button>
+
+    <br><br>
+
+  First number  <input type="number" id="no1"><br><br>
+  Second number  <input type="number" id="no2"><br><br>
+  <button onclick="add()">+</button>
+    <script>
+function same(){
+   let a= document.getElementById("first").value;
+   let b=document.getElementById("second").value;
+
+   if(a==b){
+    alert("all fine")
+   }else{
+    alert("fill the fields correctly")
+   }
+}
+
+function add(){
+  let d=  parseInt(document.getElementById("no1").value);
+ let e= parseInt(document.getElementById("no2").value);
+document.write(d+e)
+}
+// parseInt:it parses a string and returns an integer,it only returns the first value of an integer
+
+// parse:to resolve a sentence into its components 
+
+// let c="he was 50 years"
+// console.log(parseInt(c))
+    </script>
+</body>
+</html>
