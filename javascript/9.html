@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>fruits
+        <li class="items">Mango</li>
+        <li class="items">apple</li>
+        <li class="items">orange</li>
+        <li class="items">banana</li>
+        <li class="items">litchi</li>
+    </ul>
+
+    <div class="container">
+        <p class="text">hello html</p>
+        <p class="text">goodbye html!</p>
+    </div>
+
+    <form id="form">
+Name:<input type="text" id="name"><br>
+Age<input type="number" id="age"><br>
+<button>submit</button>
+
+    </form>
+    <input type="color">
+    <script>
+        let form=document.getElementById("form")
+        form.addEventListener("submit",function(e){
+
+
+e.preventDefault();
+
+           let name= document.getElementById("name").value;
+           console.log(name)
+
+           let age=document.getElementById("age").value;
+           console.log(age)
+        })
+    //   let para=  document.querySelector(".text")
+    //   console.log(para.textContent)
+
+    let data=document.querySelectorAll(".text");
+    // console.log(data)
+    data.forEach((paragraph)=>{
+console.log(paragraph.textContent)
+    })
+    //    let item= document.getElementsByClassName("items")
+    //    console.log(item[0].textContent)
+    //    item[2].style.backgroundColor="orange";
+    //    item[4].textContent="pineapple";
+
+    //  let datas=  document.getElementsByTagName("li");
+    //  console.log(datas[4].textContent)
+    //  datas[3].style.color="yellow"
+
+
+    </script>
+</body>
+</html>
