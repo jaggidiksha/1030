@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // objects :store the key value pair 
+        // object literal 
+
+        // let obj={
+        //     name:"john",
+        //     age:25,
+        //     occupation:"developer"
+        // }
+        // document.write(obj.name)
+        // object constructor 
+        // let emp=new Object()
+        // emp.name="john"
+        // emp.age=89
+        // document.write(emp.age)
+
+
+        // oops revolves around creating objects and using them to st our code , js is not purely oops based language but it supports the principles of oop 
+
+        // encapsulation abstraction polymorphism inheritance 
+        
+
+        // class :blueprint of an object 
+        // constructor():properties initialised
+
+
+        // encapsulation:it is like a capsule which hides the inner working and only shoes the necessary parts 
+
+    // class Car{
+  
+    //     constructor(brand){
+    //         this.brand=brand
+    //     }
+     
+    //   getbrand(){
+    //     return this.brand
+    //   }
+    // }
+
+    // let mycar=new Car("toyota")
+    // document.write(mycar.getbrand())
+
+
+    // abstraction :it focuses on hiding the complexities and exposing the essential /necesary portions
+
+//     class Coffeemachine{
+
+// constructor(){
+//     this.wateramount=0
+// }
+
+// fillwater(amount){
+//     this.wateramount+=amount
+// }
+
+// boilwater(){
+//     console.log("water is boiling")
+// }
+
+// makecoffee(){
+//     if(this.wateramount>0){
+//         this.boilwater()
+//         console.log("coffee is ready")
+//     }else{
+//         console.log("fill water first")
+//     }
+// }
+//     }
+
+// let machine=new Coffeemachine()
+// machine.fillwater(0)
+// machine.makecoffee()
+
+
+
+// polymorphism :allows same methods to same different implementations in derived classes
+
+// class Animal{
+//     speak(){
+//         console.log("animals make a sound")
+//     }
+// }
+
+// class Cat extends Animal{
+//     speak(){
+//         console.log("cat meows")
+//     }
+// }
+
+// class Dog extends Animal{
+//     speak(){
+//         console.log("dog barks")
+//     }
+// }
+
+// let animals=[new Animal(),new Cat(),new Dog()]
+// animals.forEach(animal=>animal.speak())
+
+
+// inheritance : allows one class to inherit properties and methods from another class
+
+// class Animal{
+//     constructor(name){
+//         this.name=name
+//     }
+//     speak(){
+//         console.log(`${this.name} makes a sound`)
+//     }
+// }
+
+// class Dog extends Animal{
+//     speak(){
+//         console.log(`${this.name} barks`)
+//     }
+// }
+
+// let pet=new Dog("buddy")
+// pet.speak()
+
+
+// prototypes : in js every object has an internal property  called as prototypes 
+
+// prototypal inheritance : 
+// prototypal object 
+// const abc ={
+//     greet:function(){
+//         console.log(`hello ${this.name}`)
+//     }
+
+// }
+// object
+
+// let a=Object.create(abc)
+// a.name="john "
+// a.greet()
+
+
+const obj={
+    name:"john"
+}
+console.log(obj)
+
+
+let obj1={
+    age:23,
+    __proto__:obj
+}
+console.log(obj1)
+
+let obj2={
+    occupation:"developer",
+    __proto__:obj1
+}
+console.log(obj2)
+    </script>
+    
+</body>
+</html>
