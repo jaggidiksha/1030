@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<ul>
+    <li class="item">mango</li>
+    <li class="item">apple</li>
+    <li class="item">litchi</li>
+    <li class="item">orange</li>
+</ul>
+    <div style="text-align: center;">
+        <h1>STUDENT FORM</h1>
+        <form id="studentform">
+            <label>Name</label>
+            <input type="text" id="name">
+            <br><br>
+            <label>Age</label>
+            <input type="number" id="age"><br><br>
+            <button>Submit</button>
+
+        </form>
+    </div>
+    <script>
+let items=document.getElementsByClassName('item')
+console.log(items[2].textContent)
+items[2].textContent='guava'
+console.log(items[2].textContent)
+items[3].style.backgroundColor="orange"
+items[1].style.color='red'
+items[1].style.fontSize='30px'
+
+let data=document.getElementsByTagName('li')
+console.log(data[0].textContent)
+data[0].style.color='yellow'
+
+
+        let form = document.getElementById('studentform')
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let namee = document.getElementById('name').value;
+            let agee = document.getElementById('age').value;
+            console.log("name",namee)
+            console.log("age",agee)
+        })
+    </script>
+
+</body>
+
+</html>
