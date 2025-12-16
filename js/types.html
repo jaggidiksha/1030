@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // non-iterable objects :number, boolean 
+        // iterable object :array ,objects 
+
+        // for-in : it iterate over the iterable objects 
+        // for(variable in objectname){
+            // code block
+        // }
+        // for-of : it iterate over the values of iterable objects 
+        // for (variable of objectname){
+            // code block
+        // }
+
+        // forEach 
+
+        let qw={
+            name:"john",
+            age:23,
+            email:"john@gmail.com"
+        }
+        //    to get key // 
+        for (x in qw){
+           console.log(x)
+        }
+        // to get values 
+        for (x in qw){
+            console.log(qw[x])
+        }
+        // to get both key and value 
+        for (x in qw){
+            console.log(x,qw[x])
+        }
+
+        let ar=["car",78,"train",56,"bus","bike"]
+           
+        // to access the indexes
+        // for(y in ar){
+        //     console.log(y)
+        // }
+        // to access the elemenets 
+        // for (y in ar){
+        //     console.log(ar[y])
+        // }
+        //  to get elements 
+        for(y of ar){
+            console.log(y)
+        }
+
+        let str="car bus bike"
+        for (a in str){
+            console.log(str[a])
+        }
+   for(y of str){
+    console.log(y)
+   }
+
+
+   let arr=[2,3,4,5,6,7]
+
+//    for Each : used to perform operation on each element 
+
+arr.forEach(function(x){
+console.log(x*2)
+})
+
+// function test(y){
+// console.log(y+2)
+// }
+// arr.forEach(test)
+
+    </script>
+</body>
+</html>
