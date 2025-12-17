@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // alert("hi")
+    //    let a= confirm("are you 18 +?")
+    //    document.write(a)
+
+   let b= prompt("enter your name");
+   document.write(b)
+        // scoping : determines the visibility or accessibility of our variables in different parts of your code 
+        // global scoping: variables declared outside any function or block of code are called global scope 
+
+        // local scoping : the variables declared inside the block of code 
+
+        // two types 
+        // functional scope : the variables declared inside the function
+        // generally var are functional scoped
+        // block scope : the variables declared inside a block or code 
+        // generally let and const are block scoped 
+
+
+        // var fruit="apple" //global variables 
+        // console.log(fruit)
+
+        // function abc(){
+        //     console.log(fruit)
+        // }
+        // abc()
+
+
+        // function a(){
+        //     let b="data"
+        //     console.log(b)
+        // }
+        // a()
+        // console.log(b)
+
+
+
+        // function abc(){
+        //     var a="funtional scope"
+        //     console.log(a)
+        // }
+        // abc()
+
+        // if(true){
+        //     let name="john"
+        //     console.log(name)
+        // }
+
+
+        // function test(a) {
+        //     string = " "
+        //     for (x in a) {
+        //         if (typeof a[x] === "string") {
+        //             string += a[x]
+        //         }
+        //     }
+        //     return string
+        // }
+        // let obj = {
+        //     name: "john",
+        //     age: 23,
+        //     occupation: "developer"
+        // }
+        // console.log(test(obj))
+
+
+        // closure/lexical scoping : there will be two functions one is outer funtion and other one inner function , closure in action says that the inner function can access the outer function variable as well as parameters 
+        // declared in es6 also arrow function was also decalred in es6 
+
+
+
+        const outerfun = (a) => {
+         let b=90
+            const innerfun = () => {
+            let sum=a+b
+            console.log(`the sum of two numbers is ${sum}`)
+            }
+            innerfun()
+        }
+        outerfun(10)
+
+
+        // string interpolation
+        //  " string " :simple
+        // expression :${expression name}
+
+    </script>
+
+</body>
+
+</html>
