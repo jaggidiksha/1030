@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">hii</p>
+    <button onclick='document.getElementById("para").innerHTML="hello"'>change text</button><br>
+    <br>
+
+    password:<input type="text" id="first"><br><br>
+    confirm password:<input type="text" id="second"><br><br>
+    <button onclick="check()">check</button>
+    <script>
+        function check(){
+           let a=  document.getElementById("first").value;
+           let b=document.getElementById("second").value ;
+
+           if(a==b){
+            alert("passwords matching")
+           }else{
+            alert("password not matching")
+           }
+
+        }
+    </script>
+    
+</body>
+</html>

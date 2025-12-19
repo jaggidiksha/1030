@@ -10,11 +10,14 @@
 <body>
     <script>
         // alert("hi")
-    //    let a= confirm("are you 18 +?")
-    //    document.write(a)
+        //    let a= confirm("are you 18 +?")
+        //    document.write(a)
 
-   let b= prompt("enter your name");
-   document.write(b)
+
+        let b = prompt("enter your name");
+        document.write(b)
+        
+
         // scoping : determines the visibility or accessibility of our variables in different parts of your code 
         // global scoping: variables declared outside any function or block of code are called global scope 
 
@@ -80,10 +83,10 @@
 
 
         const outerfun = (a) => {
-         let b=90
+            let b = 90
             const innerfun = () => {
-            let sum=a+b
-            console.log(`the sum of two numbers is ${sum}`)
+                let sum = a + b
+                console.log(`the sum of two numbers is ${sum}`)
             }
             innerfun()
         }
